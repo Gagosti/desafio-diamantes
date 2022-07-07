@@ -34,6 +34,7 @@ def extracao_de_diamantes(exp)
     indices.reverse!.each do |single|
       arr_exp.delete_at(single)
     end
+    puts 'counting diamonds...'
     puts soma_diamantes
     puts arr_exp.join
     puts '=' * 60
