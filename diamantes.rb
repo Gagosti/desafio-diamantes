@@ -1,14 +1,12 @@
 exp = "<<.<<..>><>><.>.>.<<.>.<.>>>><>><>>"
 
 def extracao_de_diamantes(exp)
-  # puts exp
   exp.gsub!('.', '')
   puts '- Dimonds without sand'
   puts exp
   puts '=' * 60
   soma_diamantes = 0
   arr_exp = exp.chars
-  # exp.split('')
   #p arr_exp
   until arr_exp.join == '>>>>'
     indices = []
